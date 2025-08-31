@@ -1,0 +1,122 @@
+@font-face {
+  font-family: 'montserrat';
+  src: url(../assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: 'roboto';
+  src: url(../assets/fonts/Roboto/Roboto-VariableFont_wdth\wght.ttf);
+}
+
+:root {
+  --title-font: 'montserrat', sans-serif;
+  --text-font: 'roboto', sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100px;
+}
+
+button {
+  background: rgb(121, 179, 255);
+  border: none;
+  padding: 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.15s ease;
+}
+button:hover {
+  background: rgb(41, 103, 184);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin: 100px auto 0;
+  max-width: 80%;
+}
+
+.header__title {
+  font-family: var(--title-font);
+  font-size: 1.8rem;
+}
+
+.players {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 60px;
+}
+
+.players__human {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.players__human__title {
+  font-family: var(--title-font);
+  padding: 20px;
+  font-size: 2rem;
+  text-align: center;
+}
+.players__human__choices {
+  display: flex;
+  justify-content: space-around;
+}
+.computer-choice {
+  background: rgb(253, 253, 114);
+  padding: 16px;
+  border-radius: 20px;
+  transition: 0.15s ease;
+}
+.players__human__score {
+  font-family: var(--text-font);
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.players__computer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.players__computer__title {
+  font-family: var(--title-font);
+  padding: 20px;
+  font-size: 2rem;
+  text-align: center;
+}
+.players__computer__choices {
+  display: flex;
+  justify-content: space-around;
+}
+.players__computer__score {
+  font-family: var(--text-font);
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.round-result {
+  font-family: var(--text-font);
+  padding: 50px 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.author {
+  font-family: var(--title-font);
+  font-size: 1.5rem;
+}
+.author-name {
+  font-weight: 800;
+}

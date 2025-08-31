@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./styles/index.css" />
+
+    <script src="./javascript/index.js"></script>
+  </head>
+  <body>
+    <header class="container header">
+      <div class="header__title">
+        <h1>Welcome to ROCK PAPER SCISSORS</h1>
+      </div>
+    </header>
+    <main class="container">
+      <section class="players">
+        <div class="players__human">
+          <div class="players__human__title">
+            <h3>Player</h3>
+          </div>
+          <div class="players__human__choices">
+            <button class="players__human__choice" id="rock">
+              <img src="./assets/icons/rock.png" alt="" />
+            </button>
+            <button class="players__human__choice" id="paper">
+              <img src="./assets/icons/paper.png" alt="" />
+            </button>
+            <button class="players__human__choice" id="scissors">
+              <img src="./assets/icons/scissors.png" alt="" />
+            </button>
+          </div>
+          <div class="players__human__score">
+            <span class="score" id="score-human">0</span>
+          </div>
+        </div>
+        <div class="players__computer">
+          <div class="players__computer__title">
+            <h3>Computer</h3>
+          </div>
+          <div class="players__computer__choices">
+            <div class="computer-choice">
+              <img src="./assets/icons/rock.png" alt="" />
+            </div>
+            <div class="computer-choice">
+              <img src="./assets/icons/paper.png" alt="" />
+            </div>
+            <div class="computer-choice">
+              <img src="./assets/icons/scissors.png" alt="" />
+            </div>
+          </div>
+          <div class="players__computer__score">
+            <span class="score" is="score-computer">0</span>
+          </div>
+        </div>
+      </section>
+      <div class="round-result"><p>test sentence</p></div>
+    </main>
+
+    <footer class="footer container">
+      <div class="author">
+        <p>By <span class="author-name">Helix34</span></p>
+      </div>
+    </footer>
+  </body>
+</html>
